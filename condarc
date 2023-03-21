@@ -1,0 +1,10 @@
+auto_activate_base: false
+channel_priority: disabled
+channels:
+  #- dppy/label/dev
+  - conda-forge
+  #- intel
+  - nodefaults
+report_errors: false
+conda-build:
+  pkg_format: 2

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source $BASEDIR/zshrcd/init/_settings.sh
+[[ ! -f $BASEDIR/zshrcd/init/settings.sh ]] || source $BASEDIR/zshrcd/init/settings.sh
+
+bash $BASEDIR/installd/ubuntu.sh
+bash $BASEDIR/installd/links.sh
+bash $BASEDIR/installd/conda.sh
+
+source ~/.zshrc
