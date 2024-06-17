@@ -26,7 +26,7 @@ compinit conda
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-for FILE in ~/.zshrcd/init/*(N/); do
+for FILE in ~/.zshrcd/init/*(N); do
     source $FILE
 done
 
