@@ -11,4 +11,3 @@ bash $BASEDIR/installd/ubuntu.sh
 bash $BASEDIR/installd/links.sh
 bash $BASEDIR/installd/conda.sh
 
-source ~/.zshrc

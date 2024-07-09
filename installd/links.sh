@@ -13,3 +13,6 @@ ln -s $BASEDIR/zshrcd/init/_settings.sh ~/.zshrcd/init/_settings.sh
 ln -s $BASEDIR/p10k.zsh ~/.p10k.zsh
 
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf 
+
+ln -s $BASEDIR/gitconfig ~/.gitconfig
+

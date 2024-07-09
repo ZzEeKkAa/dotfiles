@@ -1,9 +1,8 @@
 auto_activate_base: false
 channel_priority: disabled
 channels:
-  #- dppy/label/dev
-  - conda-forge
-  #- intel
+  - https://prefix.dev/conda-forge
+  # - conda-forge
   - nodefaults
 report_errors: false
 conda-build:
