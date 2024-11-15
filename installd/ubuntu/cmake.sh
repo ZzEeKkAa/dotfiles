@@ -4,4 +4,3 @@ test -f /usr/share/doc/kitware-archive-keyring/copyright || wget -O - https://ap
 
 echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
 sudo apt-get update
-
