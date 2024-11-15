@@ -1,0 +1,4 @@
+Host github.com
+        ProxyCommand nc -X 5 -x $socks_proxy %h %p
+Host *.tmate.io
+        ProxyCommand nc -X 5 -x $socks_proxy %h %p
