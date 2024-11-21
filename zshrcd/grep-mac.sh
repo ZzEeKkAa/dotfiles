@@ -1,0 +1,1 @@
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"

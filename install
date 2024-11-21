@@ -7,7 +7,13 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source $BASEDIR/zshrcd/init/_settings.sh
 [[ ! -f $BASEDIR/zshrcd/init/settings.sh ]] || source $BASEDIR/zshrcd/init/settings.sh
 
-bash $BASEDIR/installd/ubuntu.sh
+if [  -n "$(uname -a | grep Ubuntu)" ]; then
+    bash $BASEDIR/installd/ubuntu.sh
+fi
+if [  -n "$(uname -a | grep Darwin)" ]; then
+    bash $BASEDIR/installd/mac.sh
+fi
+bash $BASEDIR/installd/oh-my-zsh.sh
 bash $BASEDIR/installd/links.sh
 bash $BASEDIR/installd/conda.sh
 
